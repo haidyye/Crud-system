@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.Inputs{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(192, 185, 185, 0.308);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.insertInputs{
+    width: 45rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(146, 142, 142, 0.788);
+}
+
+@media only screen and(max-width:768){
+    .insertInputs{
+        margin: 5px !important;
+        background-color: aqua !important;
+    }
+}

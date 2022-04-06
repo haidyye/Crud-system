@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="Inputs" id="inputs">
+       <div class="insertInputs">
+        <label for="productName "> Products name: </label>
+        <input type="text" class="form-control my-3" id="productName">
+        <label for="productPrice "> Products price: </label>
+        <input type="text" class="form-control my-3" id="productPrice">
+        <label for="productDesc "> Products description:</label>
+        <input type="text" class="form-control my-3" id="productDesc">
+        <label for="productCat "> Products category:</label>
+        <input type="text" class="form-control my-3" id="productCat">
+        <button type="submit" class="btn btn-outline-danger" id="myBTn"> insert </button>
+    
+   </div>
+   </div>
+<div class="container mt-5">
+    <button class="btn btn-secondary float-end mb-1" id="add"> Add </button>
+    <table class="table">
+        <thead class="bg-light">
+            <th> Index </th>
+            <th> Price </th>
+            <th> Description </th>
+            <th> Category </th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+        <tbody class="display" id="display">
+           
+        </tbody>
+    </table>
+</div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
