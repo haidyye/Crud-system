@@ -7,8 +7,8 @@ var productCat = document.getElementById("productCat")
 var productSearch = document.getElementById("search")
 var currentIndex = 0;
 var productContainer;
-var mybtn = document.getElementById("myBTn");
-
+var mybtn = document.getElementById("insert");
+console.log(mybtn)
 
 
 
@@ -28,14 +28,26 @@ if (localStorage.getItem("product") == null ){
    
    
    mybtn.addEventListener("click"  , function(){ 
-   
-     if(mybtn.innerHTML == "insert"){
-         insertProduct()
-     }
-     else if(mybtn.innerHTML == "update"){
-         updateProduct()
-     }
-     displayProduct(productContainer)
+   if(mybtn.innerHTML == "insert"){
+       insertProduct()
+       $('.Inputs').fadeOut(2000)
+   }
+   else if(mybtn.innerHTML == "update"){
+       updateProduct()
+       clearForm()
+       $('.Inputs').fadeOut(2000)
+   }
+   mybtn.innerHTML = "insert"
+   displayProduct(productContainer)
+    //  if(mybtn.innerHTML == "insert"){
+    //      insertProduct()
+    //      $('.Inputs').fadeOut(2000)
+    //  }
+    //  else if(mybtn.innerHTML == "update"){
+    //      updateProduct()
+    //  }
+    //  displayProduct(productContainer)
+    
    })
    
    
@@ -111,7 +123,7 @@ if (localStorage.getItem("product") == null ){
        productdesc.value = product.proddesc;
        productCat.value = product.prodcat;
        mybtn.innerHTML = "update"
-   
+       inputs.style.display = "flex"
    }
    
    function updateProduct(){

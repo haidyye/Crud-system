@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 106, 106));
+
+}
 .Inputs{
     position: fixed;
     top:0 ;
