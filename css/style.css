@@ -23,9 +23,40 @@ body{
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(146, 142, 142, 0.788);
 }
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .Inputs{
+      z-index: 999;
+  }
+    thead{
+      display: none;
+  }
+  #add{
+     position: absolute;
+     top: 2px;
+     right: 0;
+  }
+	/* Force table to not be like tables anymore */
+	table, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table tr { 
+	   
+        margin-bottom: 10px !important;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
 
-@media only screen and(max-width:768px){
-    .insertInputs{
-        margin: 5px !important;
-    }
 }
