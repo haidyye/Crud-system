@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 106, 106));
-
+    background-color: rgb(29, 25, 25);
+    color: white !important;
 }
 .Inputs{
     position: fixed;
@@ -19,14 +19,13 @@ body{
 .insertInputs{
     width: 45rem;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(29, 25, 25);
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(146, 142, 142, 0.788);
 }
 
-@media only screen and(max-width:768){
+@media only screen and(max-width:768px){
     .insertInputs{
         margin: 5px !important;
-        background-color: aqua !important;
     }
 }
