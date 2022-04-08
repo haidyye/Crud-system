@@ -14,6 +14,9 @@ console.log(mybtn)
 
 addproduct.addEventListener("click", function(){
    inputs.style.display = "flex"
+   $(".sk-cube").fadeOut(3000 , function(){
+    $("#loading").fadeOut(1000)
+   })
 })
 
 
@@ -30,7 +33,8 @@ if (localStorage.getItem("product") == null ){
    mybtn.addEventListener("click"  , function(){ 
    if(mybtn.innerHTML == "insert"){
        insertProduct()
-       $('.Inputs').fadeOut(2000)
+       
+       $('.Inputs').fadeOut(3000)
    }
    else if(mybtn.innerHTML == "update"){
        updateProduct()
@@ -78,7 +82,7 @@ if (localStorage.getItem("product") == null ){
         <td>  ${productList[i].prodprice}</td> 
         <td>  ${productList[i].proddesc}</td>
         <td>  ${productList[i].prodcat}</td> 
-        <td> <button onclick="getProductInfo(${i})" class="btn btn-warning" "> update</button></td>
+        <td> <button onclick="getProductInfo(${i})" class="btn btn-warning" id="delete"> update</button></td>
         <td> <button onclick="deleteProduct(${i})" class="btn btn-danger" id="update"> delete</button></td>
         </tr>
         
@@ -141,4 +145,6 @@ if (localStorage.getItem("product") == null ){
        productContainer[currentIndex].proddesc = product.proddesc;
    }
    
-   
+   $(document).ready(function(){
+      
+   })

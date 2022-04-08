@@ -12,6 +12,17 @@
 <body>
    <div class="Inputs" id="inputs">
        <div class="insertInputs">
+        <div class="sk-cube-grid" id="loading">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+          </div>
         <label for="productName "> Products name: </label>
         <input type="text" class="form-control my-3" id="productName">
         <label for="productPrice "> Products price: </label>
@@ -21,11 +32,12 @@
         <label for="productCat "> Products category:</label>
         <input type="text" class="form-control my-3" id="productCat">
         <button type="submit" class="btn btn-outline-danger" id="insert"> insert </button>
-    
    </div>
    </div>
 <div class="container table-responsive mt-5">
-    <button class="btn btn-outline-secondary float-end mb-1" id="add"> Add </button>
+   <div class="btnOne">    <button class="btn btn-danger mb-1" id="add"> Add </button>
+   </div>
+   <caption>List of products :</caption>
     <table class="table text-white">
         <thead class="">
             <th> Index </th>

@@ -22,6 +22,77 @@ body{
     background-color: rgb(29, 25, 25);
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(146, 142, 142, 0.788);
+    position: relative;
+}
+.btnOne{
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+}
+.sk-cube-grid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.sk-cube-grid .sk-cube {
+  padding: 10px;
+  width: 33%;
+  height: 33%;
+  background-color: rgb(29, 28, 28);
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
 }
 @media 
 only screen and (max-width: 760px),
@@ -32,14 +103,19 @@ only screen and (max-width: 760px),
     thead{
       display: none;
   }
-  #add{
-     position: absolute;
-     top: 2px;
-     right: 0;
-  }
+  /* .btnOne{
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+  } */
 	/* Force table to not be like tables anymore */
+    .table>:not(caption)>*>* {
+      
+        padding: 2rem 1rem !important;
+    }
 	table, tbody, th, td, tr { 
 		display: block; 
+      
 	}
 	
 	/* Hide table headers (but not display: none;, for accessibility) */
@@ -49,13 +125,40 @@ only screen and (max-width: 760px),
 	}
 	
 	tr { border: 1px solid #ccc; }
-	
+	td:first-child:before{
+        content: "Index";
+        padding-bottom: 10px;
+    }
+    td:nth-child(2)::before{
+        content: "Name";
+        padding-bottom: 10px;
+    }
+    td:nth-child(3)::before{
+        content: "Price";
+        padding-bottom: 10px;
+    }
+    td:nth-child(4)::before{
+        content: "Description";
+        padding-bottom: 10px;
+    }
+    td:nth-child(5)::before{
+        content: "Category";
+        padding-bottom: 10px;
+    }
+    #delete{
+        display: inline-block;
+    }
+    #update{
+        display: inline-block;
+    }
+    td::before{
+        float: left;
+    }
 	td { 
 		/* Behave  like a "row" */
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
-		padding-left: 50%; 
 	}
 	
 
