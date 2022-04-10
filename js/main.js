@@ -33,13 +33,13 @@ if (localStorage.getItem("product") == null ){
    mybtn.addEventListener("click"  , function(){ 
    if(mybtn.innerHTML == "insert"){
        insertProduct()
-       
+        
        $('.Inputs').fadeOut(3000)
    }
    else if(mybtn.innerHTML == "update"){
        updateProduct()
        clearForm()
-       $('.Inputs').fadeOut(2000)
+       $('.Inputs').fadeOut(3000)
    }
    mybtn.innerHTML = "insert"
    displayProduct(productContainer)
