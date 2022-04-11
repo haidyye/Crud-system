@@ -100,7 +100,7 @@ body{
             transform: scale3D(0, 0, 1);
   } 
 }
-@media 
+/* @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
   .Inputs{
@@ -115,17 +115,17 @@ only screen and (max-width: 760px),
     right: 1.5rem;
   } 
 	 Force table to not be like tables anymore */
-     .table>:not(caption)>*>* {
+     /* .table>:not(caption)>*>* {
        
         padding: 2rem 1rem !important;
     }
 	table, tbody, th, td, tr { 
 		display: block; 
       
-	}
-	
+	} */
+	 
 	/* Hide table headers (but not display: none;, for accessibility) */
-	 table tr { 
+	 /* table tr { 
 
         margin-bottom: 10px !important;
 	}
@@ -160,21 +160,22 @@ only screen and (max-width: 760px),
     }
     td::before{
         float: left;
-    }
-	td { 
+    } */
+	/* td {  */
 		/* Behave  like a "row" */
-		border: none;
+		/* border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
     text-align: right;
 	} 
-	
+  }
+	 */
 
-}
-/* @media 
+
+@media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px) {
     tab{
         max-width: 100px !important;
     }
-} */
+} 

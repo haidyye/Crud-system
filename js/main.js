@@ -128,6 +128,9 @@ if (localStorage.getItem("product") == null ){
        productCat.value = product.prodcat;
        mybtn.innerHTML = "update"
        inputs.style.display = "flex"
+       $(".sk-cube").fadeOut(2000 , function(){
+        $("#loading").fadeOut(1000)
+       })
    }
    
    function updateProduct(){
